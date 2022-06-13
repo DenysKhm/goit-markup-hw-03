@@ -1,0 +1,191 @@
+:root {
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196F3;
+    --primery-background-color: #FFFFFF;
+}
+.page {
+    background-color: var(--primery-background-color);
+    color: var(--primery-text-color);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    color: var(--accent-text-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo-header {color: black;}
+
+/* удалили точки списка */
+ul {list-style: none;}
+
+/* цвет навигации сайта */
+.nav-site .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+.nav-site .link:hover,
+.nav-site .link:focus {
+    color: var(--accent-text-color);
+}
+
+/* контакты хедер */
+.contacts .link {
+    color: var(--primery-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-text-color);
+}
+
+/* первая секция с кнопкой */
+.hero {
+    color: #FFFFFF;
+    background-color: #2F303A;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* вторая секция */
+.title {
+    color: var(--title-text-color);
+}
+.services .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.services .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.team, .job {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* футер */
+.contacts .link-footer:hover,
+.contacts .link-footer:focus {
+    color: var(--accent-text-color);
+}
+.footer {
+    background-color: #2F303A;
+}
+.logo-footer {
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.address {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.link-footer {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* ПОРТФОЛИО */
+.hidden {
+    display: none;
+}
+.button-portfolio {
+    background-color: #F5F4FA;
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+    background-color: var(--accent-text-color);
+    color: #FFFFFF;
+}
+
+.portfolio .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+/* цвет основы текста #757575 */
+/* цвет текста вторички #212121 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* цвет основа хедер #FFFFFF */
+/* основа цвет фона #E5E5E5 */
+/* цвет фона верхний #2F303A */
+/* цвет фона наша команда #F5F4FA */
