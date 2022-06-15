@@ -18,6 +18,7 @@
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .logo-header {color: black;}
@@ -26,52 +27,63 @@
 ul {list-style: none;}
 
 /* цвет навигации сайта */
-.nav-site .link {
+.nav-site a {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
-.nav-site .link:hover,
-.nav-site .link:focus {
+.nav-site a:hover,
+.nav-site a:focus {
     color: var(--accent-text-color);
 }
 
 /* контакты хедер */
-.contacts .link {
+.contacts a {
     color: var(--primery-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-text-color);
+}
+
+.nav-site .current {
     color: var(--accent-text-color);
 }
 
 /* первая секция с кнопкой */
 .hero {
-    color: #FFFFFF;
     background-color: #2F303A;
+    }
+.hero-title {
+    color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /* or 136% */
-    text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
+    text-transform: uppercase;   
+    }
 .button {
     background-color: #2196F3;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #188CE8;
 }
 
 /* вторая секция */
@@ -92,7 +104,12 @@ ul {list-style: none;}
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.team, .job {
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-title, .job {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -100,14 +117,15 @@ ul {list-style: none;}
     text-align: center;
     letter-spacing: 0.03em;
 }
-.team .title {
+.workers .title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: 1.88;
     text-align: center;
     letter-spacing: 0.03em;
-}
-.team .text {
+    }
+    
+.workers .text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -133,13 +151,23 @@ ul {list-style: none;}
 }
 .address {
     color: #FFFFFF;
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+.footer-contacts .link-footer{
+    /* font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em; */
+    text-decoration: none;
+}
+
 .link-footer {
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -150,7 +178,7 @@ ul {list-style: none;}
 .hidden {
     display: none;
 }
-.button-portfolio {
+.button-portfolio button{
     background-color: #F5F4FA;
     color: #212121;
     font-weight: 500;
@@ -161,10 +189,19 @@ ul {list-style: none;}
 
     cursor: pointer;
 }
-.button-portfolio:hover,
-.button-portfolio:focus {
+.button-portfolio button:hover,
+.button-portfolio button:focus {
     background-color: var(--accent-text-color);
     color: #FFFFFF;
+}
+.button-portfolio .current-button {
+    background-color: var(--accent-text-color);
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+.portfolio a {
+    text-decoration: none;
+    font-family: 'Roboto';
 }
 
 .portfolio .title {
@@ -175,6 +212,7 @@ ul {list-style: none;}
 }
 
 .portfolio .text {
+    color: var(--primery-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
