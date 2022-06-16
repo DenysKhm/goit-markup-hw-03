@@ -28,13 +28,20 @@ img {
     padding-right: 15px;
     margin: 0 auto;
     outline: 2px solid tomato; */
-}
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
+
+.header-section .container {
+    display: flex;
+    align-items: center;
+
+}
+
 .logo {
     color: var(--accent-text-color);
     font-family: Raleway;
@@ -46,6 +53,7 @@ img {
     padding-top: 24px;
     padding-bottom: 25px;
     display: block;
+    margin-right: 93px;
 }
 
 .logo-header {color: black;}
@@ -54,6 +62,12 @@ img {
 ul {list-style: none;}
 
 /* цвет навигации сайта */
+.nav-site {
+    display: flex;
+}
+.nav-site-item:not(:last-child) {
+    margin-right: 50px;
+}
 
 .nav-site-link {
     color: var(--title-text-color);
@@ -71,8 +85,14 @@ ul {list-style: none;}
 .nav-site-link:focus {
     color: var(--accent-text-color);
 }
+.nav-site .current {
+    color: var(--accent-text-color);
+}
 
 /* контакты хедер */
+.contacts {
+    display: flex;
+}
 .contacts-link {
     color: var(--primery-text-color);
     font-weight: 500;
@@ -89,8 +109,12 @@ ul {list-style: none;}
     color: var(--accent-text-color);
 }
 
-.nav-site .current {
-    color: var(--accent-text-color);
+.header-contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-contacts {
+    margin-left: auto;
 }
 
 /* первая секция с кнопкой */
@@ -132,14 +156,23 @@ ul {list-style: none;}
 }
 
 /* вторая секция */
+.services {
+    display: flex;
+    padding: 0;
+}
+
 .services-section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+.services-item:not(:last-child) {
+    margin-right: 30px;
+}
 .services-item {
     width: 270px;
     height: 101px;
+    flex-basis: calc((100% - 90px) / 4);
 }
 .services-title {
     color: var(--title-text-color);
@@ -168,7 +201,11 @@ ul {list-style: none;}
 .job-title {
     margin-bottom: 50px;
 }
-
+.job-list {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+}
 .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -183,6 +220,11 @@ ul {list-style: none;}
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+}
+.workers {
+    display: flex;
+    gap: 30px;
+    padding: 0;
 }
 .workers-title {
     color: var(--title-text-color);
@@ -246,6 +288,9 @@ ul {list-style: none;}
 .footer-contacts .link-footer{
     text-decoration: none;
 }
+.footer-contacts {
+    padding: 0;
+}
 
 .link-footer {
     color: rgba(255, 255, 255, 0.6);
@@ -260,7 +305,17 @@ ul {list-style: none;}
 .hidden {
     display: none;
 }
-.button-portfolio button{
+.button-portfolio {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.button-item:not(:last-child) {
+    margin-right: 8px;
+}
+.button-portfolio .button-prtfl-item {
     background-color: #F5F4FA;
     color: #212121;
     font-weight: 500;
@@ -268,11 +323,10 @@ ul {list-style: none;}
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-
     cursor: pointer;
 }
-.button-portfolio button:hover,
-.button-portfolio button:focus {
+.button-portfolio .button-prtfl-item:hover,
+.button-portfolio .button-prtfl-item:focus {
     background-color: var(--accent-text-color);
     color: #FFFFFF;
 }
@@ -284,6 +338,16 @@ ul {list-style: none;}
 .portfolio a {
     text-decoration: none;
     font-family: 'Roboto';
+}
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    padding-bottom: 94px;
+}
+.portfolio-item {
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-title {

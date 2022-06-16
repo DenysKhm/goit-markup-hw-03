@@ -13,24 +13,26 @@
 
 <body class="body">
     <!--Шапка-->
-    <header class="section">
+    <header class="header-section">
         <div class="container">
             <a href="/goit-markup-hw-01/index.html" class="logo"> Web<span class="logo-header">Studio</span></a>
         
         <!--Навигация-->
         <nav>
             <ul class="nav-site">
-                <li><a href="./index.html" class="current nav-site-link">Студия</a></li>
-                <li><a href="./portfolio.html" class="nav-site-link">Портфолио</a></li>
-                <li><a href="" class="nav-site-link">Контакты</a></li>
+                <li class="nav-site-item"><a href="./index.html" class="current nav-site-link">Студия</a></li>
+                <li class="nav-site-item"><a href="./portfolio.html" class="nav-site-link">Портфолио</a></li>
+                <li class="nav-site-item"><a href="" class="nav-site-link">Контакты</a></li>
             </ul>
         </nav>
 
         <!--Контакты-->
-        <ul class="contacts">
-            <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
-        </ul>
+        <div class="header-contacts">
+            <ul class="contacts">
+                <li class="header-contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+                <li class="header-contacts-item"><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
         </div>
     </header>
 
@@ -69,10 +71,10 @@
         <section class="job-section">
             <div class="container">
                 <h2 class="job-title">Чем мы занимаемся</h2>
-            <ul>
-                <li><img src="images/box1.jpg" alt="backend" width="370"></li>
-                <li><img src="images/box2.jpg" alt="frontend" width="370"></li>
-                <li><img src="images/box3.jpg" alt="design" width="370"></li>
+            <ul class="job-list">
+                <li class="job-item"><img src="images/box1.jpg" alt="backend" width="370"></li>
+                <li class="job-item"><img src="images/box2.jpg" alt="frontend" width="370"></li>
+                <li class="job-item"><img src="images/box3.jpg" alt="design" width="370"></li>
             </ul>
             </div>
         </section>
@@ -108,7 +110,7 @@
     </main>
 
     <!--Футер-->
-    <footer class="footer footer-section">
+    <footer class="footer">
         <div class="container">
             <a href="/goit-markup-hw-01/index.html" class="logo-footer">Web<span class="logo-footer-color">Studio</span></a>
     <!--Контакты-->
