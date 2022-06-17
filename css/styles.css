@@ -36,6 +36,11 @@ img {
     margin: 0 auto;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .header-section .container {
     display: flex;
     align-items: center;
@@ -162,10 +167,6 @@ ul {list-style: none;}
 .services {
     display: flex;
     padding: 0;
-}
-
-.services-section {
-    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -197,9 +198,6 @@ ul {list-style: none;}
 .team {
     background-color: #F5F4FA;
 }
-.job-section {
-    margin-bottom: 94px;
-}
 
 .job-title {
     margin-bottom: 50px;
@@ -209,10 +207,7 @@ ul {list-style: none;}
     gap: 30px;
     padding: 0;
 }
-.team-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .team-title {
     margin-bottom: 50px;
 }
@@ -362,6 +357,7 @@ ul {list-style: none;}
     text-decoration: none;
     font-family: 'Roboto';
 }
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -372,9 +368,14 @@ ul {list-style: none;}
 .portfolio-item {
     width: 370px;
     height: 404px;
-    border: 1px solid #EEEEEE;
+    
     flex-basis: calc((100% - 60px) / 3);
 }
+
+.portfolio-border {
+    border: 1px solid #EEEEEE;
+}
+
 .portfolio-title, .portfolio-text {
     padding-left: 24px;
 }
