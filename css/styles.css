@@ -284,6 +284,7 @@ ul {list-style: none;}
 .address {
     min-width: 231px;
     min-height: 81px;
+    margin: 0;
 }
 .address-item {
     color: #FFFFFF;
@@ -295,14 +296,18 @@ ul {list-style: none;}
     padding: 0;
     margin-top: 20px;
 }
-
+.footer {
+    height: 252px;
+}
 .footer-contacts .link-footer{
     text-decoration: none;
 }
 .footer-contacts {
     padding: 0;
+    margin: 0;
 }
 .footer-contact-item:first-child {
+    padding-top: 9px;
     margin-bottom: 9px;
 }
 .link-footer {
@@ -334,20 +339,20 @@ ul {list-style: none;}
     color: #212121;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
+    border-radius: 4px;
+    border: 0px;
+    padding: 6px 22px; 
 }
 .button-portfolio .button-prtfl-item:hover,
 .button-portfolio .button-prtfl-item:focus {
     background-color: var(--accent-text-color);
     color: #FFFFFF;
 }
-.button-prtfl-item {
-    border-radius: 4px;
-    border: 0px;
-}
+
 .button-portfolio .current-button {
     background-color: var(--accent-text-color);
     color: #FFFFFF;
