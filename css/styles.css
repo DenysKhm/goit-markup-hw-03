@@ -98,6 +98,7 @@ ul {list-style: none;}
 /* контакты хедер */
 .contacts {
     display: flex;
+    margin-left: auto;
 }
 .contacts-link {
     color: var(--primery-text-color);
@@ -120,7 +121,7 @@ ul {list-style: none;}
 }
 
 .header-contacts {
-    margin-left: auto;
+    
 }
 
 /* первая секция с кнопкой */
@@ -177,7 +178,6 @@ ul {list-style: none;}
 }
 .services-item {
     width: 270px;
-    height: 101px;
     flex-basis: calc((100% - 90px) / 4);
 }
 .services-title {
@@ -229,9 +229,12 @@ ul {list-style: none;}
 
 .workers-item {
     width: 270px;
-    height: 368px;
     background-color: #FFFFFF;
     box-shadow: rgba(0, 0, 0, 25%);
+}
+.workers-name {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .workers-title {
     color: var(--title-text-color);
@@ -240,6 +243,7 @@ ul {list-style: none;}
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
     }
     
 .workers-text {
@@ -292,10 +296,9 @@ ul {list-style: none;}
     letter-spacing: 0.03em;
     padding: 0;
     margin-top: 20px;
+    margin-bottom: 9px;
 }
-.footer {
-    height: 252px;
-}
+
 .footer-contacts .link-footer{
     text-decoration: none;
 }
@@ -304,7 +307,6 @@ ul {list-style: none;}
     margin: 0;
 }
 .footer-contact-item:first-child {
-    padding-top: 9px;
     margin-bottom: 9px;
 }
 .link-footer {
@@ -323,7 +325,6 @@ ul {list-style: none;}
 .button-portfolio {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
@@ -365,7 +366,6 @@ ul {list-style: none;}
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
-    padding-bottom: 94px;
 }
 .portfolio-item {
     width: 370px;
@@ -375,7 +375,9 @@ ul {list-style: none;}
 }
 
 .portfolio-border {
-    border: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .portfolio-title, .portfolio-text {
