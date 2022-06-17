@@ -15,7 +15,7 @@ p, h1-h6 {
     margin: 0;
 }
 
-ul p {
+ul {
     margin: 0;
     padding-left: 0;
 }
@@ -46,7 +46,7 @@ img {
     align-items: center;
 }
 .header-section {
-    border: 1px solid #ECECEC
+    border-bottom: 1px solid #ECECEC
 }
 .logo {
     color: var(--accent-text-color);
@@ -139,7 +139,7 @@ ul {list-style: none;}
     text-transform: uppercase;  
     max-width: 696px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     }
 .button {
     background-color: #2196F3;
@@ -164,10 +164,12 @@ ul {list-style: none;}
 }
 
 /* вторая секция */
+.section-services {
+    padding-bottom: 0;
+}
 .services {
     display: flex;
     padding: 0;
-    padding-bottom: 94px;
 }
 
 .services-item:not(:last-child) {
